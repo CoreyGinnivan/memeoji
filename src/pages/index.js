@@ -1,20 +1,41 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby testing.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <h1 className="text-6xl text-black">Memeojis</h1>
+    <p>Something about memeojis.</p>
+    <div className="grid grid-flow-row gap-4">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+      <div>J</div>
+      <div>K</div>
+      <div>L</div>
+      <div>M</div>
+      <div>N</div>
+      <div>O</div>
+      <div>P</div>
+      <div>Q</div>
+      <div>R</div>
+      <div>S</div>
+      <div>T</div>
+      <div>U</div>
+      <div>V</div>
+      <div>W</div>
+      <div>X</div>
+      <div>Y</div>
+      <div>Z</div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
