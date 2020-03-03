@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const SecondPage = () => (
   <Layout>
     <SEO title="Suggest a Memeoji" />
-    <Link to="/" className="mb-2">
+    <Link to="/" className="mb-2" style={{ width: "fit-content" }}>
       <span className="mr-2">←</span>Back Home
     </Link>
     <h1>Suggest a Memeoji</h1>
