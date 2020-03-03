@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Memeojis`,
-    description: `A collection of custom emojis that the world really needs.`,
+    description: `A collection of custom meme-inspired emojis that you didn't realise
+    you needed.`,
     author: `@CoreyGinnivan`,
   },
   plugins: [
