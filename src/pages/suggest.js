@@ -17,6 +17,10 @@ export default class SecondPage extends Component {
     this.state = { isValidated: false }
   }
 
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
@@ -64,6 +68,7 @@ export default class SecondPage extends Component {
           netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
+          <input type="hidden" name="form-name" value="contact" />
           <p class="hidden">
             <label>
               Don’t fill this out if you're human: <input name="bot-field" />
@@ -77,6 +82,7 @@ export default class SecondPage extends Component {
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
               placeholder=":memeoji name:"
               required
+              onChange={this.handleChange}
             />
           </label>
           <label className="flex flex-col text-sm font-semibold mt-4">
@@ -87,6 +93,7 @@ export default class SecondPage extends Component {
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
               placeholder="www.knowyourmeme.com/..."
               required
+              onChange={this.handleChange}
             />
           </label>
           <label className="flex flex-col text-sm font-semibold mt-4">
@@ -95,6 +102,7 @@ export default class SecondPage extends Component {
               type="file"
               name="upload"
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
+              onChange={this.handleChange}
             />
           </label>
 
