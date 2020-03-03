@@ -28,7 +28,13 @@ const SecondPage = () => (
       method="POST"
       className="flex flex-col w-full lg:w-2/3"
       data-netlify="true"
+      netlify-honeypot="bot-field"
     >
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you're human: <input name="bot-field" />
+        </label>
+      </p>
       <label className="flex flex-col text-sm font-semibold mt-4">
         Suggested Memeoji Name*
         <input
