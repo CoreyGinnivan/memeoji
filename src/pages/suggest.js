@@ -65,7 +65,7 @@ export default class submission extends Component {
           method="POST"
           className="flex flex-col w-full lg:w-2/3"
           data-netlify="true"
-          action="/pages/success/"
+          action="/success/"
           netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
