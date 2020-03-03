@@ -6,9 +6,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
+  const formData = new FormData()
+
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key])
+  }
+
+  return formData
 }
 
 export default class submission extends Component {
@@ -21,12 +25,15 @@ export default class submission extends Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  handleAttachment = e => {
+    this.setState({ [e.target.name]: e.target.files[0] })
+  }
+
   handleSubmit = e => {
     e.preventDefault()
     const form = e.target
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
         ...this.state,
@@ -69,7 +76,7 @@ export default class submission extends Component {
           netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="memeoji-submission" />
           <p class="hidden">
             <label>
               Don’t fill this out if you're human: <input name="bot-field" />
@@ -78,22 +85,22 @@ export default class submission extends Component {
           <label className="flex flex-col text-sm font-semibold mt-4">
             Suggested Memeoji Name*
             <input
-              type="text"
-              name="memoji-name"
+              type={"text"}
+              name={"memoji-name"}
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
               placeholder=":memeoji name:"
-              required
+              required={true}
               onChange={this.handleChange}
             />
           </label>
           <label className="flex flex-col text-sm font-semibold mt-4">
             Link to meme or concept*
             <input
-              type="text"
-              name="inspo-link"
+              type={"text"}
+              name={"inspo-link"}
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
               placeholder="www.knowyourmeme.com/..."
-              required
+              required={true}
               onChange={this.handleChange}
             />
           </label>
@@ -103,7 +110,7 @@ export default class submission extends Component {
               type="file"
               name="upload"
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
-              onChange={this.handleChange}
+              onChange={this.handleAttachment}
             />
           </label>
 
