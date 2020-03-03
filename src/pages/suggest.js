@@ -69,11 +69,12 @@ export default class submission extends Component {
           Alternatively, if you want to flex those Designer muscles of yours and
           help me out, then{" "}
           <a
-            href="#"
+            href="https://drive.google.com/open?id=1aM3htZtpOTs6wuifzB7UOHQXQZWQjq-D"
             className="font-semibold text-black hover:underline"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Download the Sketch file template
+            Download the Sketch template ⤴
           </a>{" "}
           and upload your PNG below.
         </p>
@@ -97,7 +98,7 @@ export default class submission extends Component {
             <input
               type={"text"}
               name={"memoji-name"}
-              className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
+              className="bg-white border border-2 border-gray-400 p-2 mt-2 rounded-lg font-normal"
               placeholder=":memeoji name:"
               required={true}
               onChange={this.handleChange}
@@ -108,7 +109,7 @@ export default class submission extends Component {
             <input
               type={"text"}
               name={"inspo-link"}
-              className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
+              className="bg-white border border-2 border-gray-400 p-2 mt-2 rounded-lg font-normal"
               placeholder="www.knowyourmeme.com/..."
               required={true}
               onChange={this.handleChange}
@@ -119,7 +120,7 @@ export default class submission extends Component {
             <input
               type="file"
               name="upload"
-              className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
+              className="bg-white border border-2 border-gray-400 p-2 mt-2 rounded-lg font-normal"
               onChange={this.handleAttachment}
             />
           </label>

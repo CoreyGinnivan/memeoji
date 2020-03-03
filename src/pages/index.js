@@ -11,7 +11,7 @@ import Disapproval from "../images/memeojis/disapproval.png"
 import Lenny from "../images/memeojis/lenny.png"
 import Lol from "../images/memeojis/lol.png"
 import Shifty from "../images/memeojis/shifty.png"
-import Staring from "../images/memeojis/staring.png"
+import Squinting from "../images/memeojis/squinting.png"
 
 const Memeoji = ({ name, img }) => {
   return (
@@ -34,10 +34,13 @@ function DownloadAll() {
   return (
     <a
       id="downloadAll"
-      href="#"
-      className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg text-center justify-center font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 lg:ml-0 lg:mt-2"
+      href="/"
+      className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 lg:ml-0 lg:mt-2"
       onClick={handleClick}
     >
+      <span role="img" aria-label="down arrow" class="mr-2">
+        ⬇️
+      </span>
       Download All Memeojis
     </a>
   )
@@ -60,27 +63,31 @@ const IndexPage = () => {
               href="https://chrome.google.com/webstore/detail/neutral-face-emoji-tools/anchoacphlfbdomdlomnbbfhcmcdmjej"
               target="_blank"
               className="font-semibold text-black hover:underline"
+              rel="noopener noreferrer"
             >
               I recommend this chrome extention ⤴
             </a>
             .
           </p>
         </div>
-        <div className="flex flex-row lg:flex-col">
+        <div className="flex flex-row lg:flex-col lg:ml-8">
           <Link
             to="/suggest/"
-            className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg text-center justify-center font-semibold hover:bg-gray-900 hover:text-white"
+            className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white"
           >
+            <span role="img" aria-label="speaker" class="mr-2">
+              📢
+            </span>
             Suggest a Memeoji
           </Link>
           <DownloadAll />
         </div>
       </div>
-      <div className="grid grid-flow-row gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+      <div className="grid grid-flow-row gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
         <Memeoji img={Disapproval} name="disapproval" />
         <Memeoji img={Epic} name="epic_smiley" />
         <Memeoji img={Shifty} name="shifty" />
-        <Memeoji img={Staring} name="staring" />
+        <Memeoji img={Squinting} name="squinting" />
         <Memeoji img={Cuteness} name="cuteness_overload" />
         <Memeoji img={Lenny} name="lenny" />
         <Memeoji img={Lol} name="lol" />

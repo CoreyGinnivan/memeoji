@@ -28,6 +28,7 @@ const Success = () => (
         href="https://twitter.com/CoreyGinnivan"
         target="_blank"
         className="font-semibold text-black hover:underline"
+        rel="noopener noreferrer"
       >
         Twitter ⤴
       </a>
