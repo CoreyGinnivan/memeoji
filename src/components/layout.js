@@ -8,15 +8,31 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Disapproval from "../images/memeojis/disapproval.png"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
     <>
       <main className="p-12">{children}</main>
-      <footer className="p-12">
-        © {new Date().getFullYear()}, Built with adequate skills by
-        CoreyGinnivan.
+      <footer className="fled flex-row items-center p-12 mt-auto">
+        © {new Date().getFullYear()}, Crafted with{" "}
+        <img
+          src={Disapproval}
+          alt="Disapproval"
+          width="20"
+          className="inline-block"
+        />{" "}
+        by{" "}
+        <a
+          href="https://twitter.com/CoreyGinnivan"
+          target="_blank"
+          className="font-semibold text-black hover:underline"
+        >
+          @CoreyGinnivan
+        </a>
+        .
       </footer>
     </>
   )

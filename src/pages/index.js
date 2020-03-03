@@ -15,8 +15,9 @@ import Staring from "../images/memeojis/staring.png"
 const Memeoji = ({ name, img }) => {
   return (
     <a
-      className="flex flex-col justify-center items-center border border-gray-400 rounded-lg p-4 hover:bg-gray-100 "
+      className="transition-all duration-200 ease-in-out flex flex-col justify-center items-center shadow-none hover:shadow hover:shadow-xs hover:shadow-lg rounded-lg p-4 border-gray-200 border hover:border-white"
       href={img}
+      download
     >
       <img src={img} alt={name} width="60" />
       <span className="text-gray-600 text-xs pt-2">:{name}:</span>
