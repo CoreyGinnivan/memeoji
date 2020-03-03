@@ -35,7 +35,7 @@ function DownloadAll() {
     <a
       id="downloadAll"
       href="/"
-      className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 lg:ml-0 lg:mt-2"
+      className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 xl:ml-0 xl:mt-2"
       onClick={handleClick}
     >
       <span role="img" aria-label="down arrow" class="mr-2">
@@ -50,7 +50,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="flex flex-col lg:flex-row justify-between lg:items-center mb-10">
+      <div className="flex flex-col xl:flex-row justify-between xl:items-center mb-10">
         <div>
           <h1 className="text-3xl md:text-6xl text-black">Memeojis</h1>
           <p className="text-sm sm:text-base">
@@ -58,19 +58,19 @@ const IndexPage = () => {
             you needed.
           </p>
           <p className="text-sm sm:text-base">
-            Want to know how to get these on to Slack easily?{" "}
+            Bulk add your memeojis to your Slack using{" "}
             <a
               href="https://chrome.google.com/webstore/detail/neutral-face-emoji-tools/anchoacphlfbdomdlomnbbfhcmcdmjej"
               target="_blank"
               className="font-semibold text-black hover:underline"
               rel="noopener noreferrer"
             >
-              I recommend this chrome extention ⤴
+              this Google Chrome extention ⤴
             </a>
             .
           </p>
         </div>
-        <div className="flex flex-row lg:flex-col lg:ml-8">
+        <div className="flex flex-row xl:flex-col xl:ml-8">
           <Link
             to="/suggest/"
             className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white"
