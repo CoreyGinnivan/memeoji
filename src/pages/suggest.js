@@ -83,6 +83,7 @@ export default class submission extends Component {
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
               placeholder=":memeoji name:"
               required
+              onChange={this.handleChange}
             />
           </label>
           <label className="flex flex-col text-sm font-semibold mt-4">
@@ -93,14 +94,16 @@ export default class submission extends Component {
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
               placeholder="www.knowyourmeme.com/..."
               required
+              onChange={this.handleChange}
             />
           </label>
           <label className="flex flex-col text-sm font-semibold mt-4">
             Your Memeoji png (optional)
             <input
               type="file"
-              name="file"
+              name="upload"
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
+              onChange={this.handleChange}
             />
           </label>
 
