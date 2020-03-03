@@ -28,9 +28,9 @@ const Memeoji = ({ name, img }) => {
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO />
+      <SEO title="Home" />
       <h1 className="text-6xl text-black">Memeojis</h1>
-      <p>Something about memeojis.</p>
+      <p>A collection of custom emojis that the world really needs.</p>
       <div className="grid grid-flow-row gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
         <Memeoji img={Disapproval} name="disapproval" />
         <Memeoji img={Epic} name="epic_smiley" />
