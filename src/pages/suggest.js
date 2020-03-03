@@ -69,6 +69,7 @@ export default class submission extends Component {
           netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
+          <input type="hidden" name="form-name" value="contact" />
           <p class="hidden">
             <label>
               Don’t fill this out if you're human: <input name="bot-field" />
