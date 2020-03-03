@@ -27,16 +27,12 @@ const Memeoji = ({ name, img }) => {
 }
 
 function DownloadAll() {
-  function handleClick(e) {
-    e.preventDefault()
-    console.log("The link was clicked.")
-  }
   return (
     <a
       id="downloadAll"
       href="/"
       className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 xl:ml-0 xl:mt-2"
-      onClick={handleClick}
+      download
     >
       <span role="img" aria-label="down arrow" class="mr-2">
         ⬇️
