@@ -35,7 +35,7 @@ function DownloadAll() {
     <a
       id="downloadAll"
       href="#"
-      className="flex border-gray-900 border-4 py-2 px-4 rounded-lg text-center justify-center font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 lg:ml-0 lg:mt-2"
+      className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg text-center justify-center font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 lg:ml-0 lg:mt-2"
       onClick={handleClick}
     >
       Download All Memeojis
@@ -49,8 +49,8 @@ const IndexPage = () => {
       <SEO title="Home" />
       <div className="flex flex-col lg:flex-row justify-between lg:items-center mb-10">
         <div>
-          <h1 className="text-6xl text-black">Memeojis</h1>
-          <p>
+          <h1 className="text-3xl md:text-6xl text-black">Memeojis</h1>
+          <p className="text-sm sm:text-base">
             A collection of custom meme-inspired emojis that you didn't realise
             you needed.
           </p>
@@ -58,7 +58,7 @@ const IndexPage = () => {
         <div className="flex flex-row lg:flex-col">
           <Link
             to="/suggest/"
-            className="flex border-gray-900 border-4 py-2 px-4 rounded-lg text-center justify-center font-semibold hover:bg-gray-900 hover:text-white"
+            className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg text-center justify-center font-semibold hover:bg-gray-900 hover:text-white"
           >
             Suggest a Memeoji
           </Link>
