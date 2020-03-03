@@ -12,20 +12,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <main className="p-12">{children}</main>
-      <footer>
+      <footer className="p-12">
         © {new Date().getFullYear()}, Built with adequate skills by
         CoreyGinnivan.
       </footer>

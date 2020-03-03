@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
+    `typeface-inter`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
