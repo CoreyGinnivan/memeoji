@@ -79,7 +79,7 @@ export default class submission extends Component {
             Suggested Memeoji Name*
             <input
               type="text"
-              name="name"
+              name="memoji-name"
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
               placeholder=":memeoji name:"
               required
@@ -89,7 +89,7 @@ export default class submission extends Component {
             Link to meme or concept*
             <input
               type="text"
-              name="link"
+              name="inspo-link"
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
               placeholder="www.knowyourmeme.com/..."
               required
@@ -99,7 +99,7 @@ export default class submission extends Component {
             Your Memeoji png (optional)
             <input
               type="file"
-              name="upload"
+              name="file"
               className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
             />
           </label>
