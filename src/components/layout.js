@@ -14,15 +14,15 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <main className="p-12">{children}</main>
-      <footer className="fled flex-row items-center p-12 mt-auto">
+    <div className="flex flex-col" style={{ height: "100vh" }}>
+      <main className="flex flex-col p-12 flex-grow">{children}</main>
+      <footer className="fled flex-row items-center p-12">
         © {new Date().getFullYear()}, Crafted with{" "}
         <img
           src={Disapproval}
           alt="Disapproval"
           width="20"
-          className="inline-block"
+          className="inline-block mb-1"
         />{" "}
         by{" "}
         <a
@@ -31,10 +31,17 @@ const Layout = ({ children }) => {
           className="font-semibold text-black hover:underline"
         >
           @CoreyGinnivan
+        </a>{" "}
+        •{" "}
+        <a
+          href="https://github.com/coreyginnivan/memeoji/"
+          className="font-semibold text-black hover:underline"
+          target="_blank"
+        >
+          GitHub
         </a>
-        .
       </footer>
-    </>
+    </div>
   )
 }
 
