@@ -25,8 +25,9 @@ const SecondPage = () => (
     </p>
     <form
       name="memeoji-submission"
+      method="POST"
       className="flex flex-col w-full lg:w-2/3"
-      netlify
+      data-netlify="true"
     >
       <label className="flex flex-col text-sm font-semibold mt-4">
         Suggested Memeoji Name*
@@ -42,7 +43,7 @@ const SecondPage = () => (
         Link to meme or concept*
         <input
           type="text"
-          name="name"
+          name="link"
           className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
           placeholder="www.knowyourmeme.com/..."
           required
@@ -52,7 +53,7 @@ const SecondPage = () => (
         Your Memeoji png (optional)
         <input
           type="file"
-          name="name"
+          name="uploaf"
           className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
         />
       </label>

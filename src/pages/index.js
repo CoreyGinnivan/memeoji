@@ -54,6 +54,17 @@ const IndexPage = () => {
             A collection of custom meme-inspired emojis that you didn't realise
             you needed.
           </p>
+          <p className="text-sm sm:text-base">
+            Want to know how to get these on to Slack easily?{" "}
+            <a
+              href="https://chrome.google.com/webstore/detail/neutral-face-emoji-tools/anchoacphlfbdomdlomnbbfhcmcdmjej"
+              target="_blank"
+              className="font-semibold text-black hover:underline"
+            >
+              I recommend this chrome extention ⤴
+            </a>
+            .
+          </p>
         </div>
         <div className="flex flex-row lg:flex-col">
           <Link

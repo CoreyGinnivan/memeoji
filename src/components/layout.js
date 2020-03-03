@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
           target="_blank"
           className="font-semibold text-black hover:underline"
         >
-          @CoreyGinnivan
+          @CoreyGinnivan ⤴
         </a>{" "}
         •{" "}
         <a
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
           className="font-semibold text-black hover:underline"
           target="_blank"
         >
-          GitHub
+          GitHub ⤴
         </a>
       </footer>
     </div>
