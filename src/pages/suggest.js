@@ -59,7 +59,7 @@ const SecondPage = () => (
         Your Memeoji png (optional)
         <input
           type="file"
-          name="uploaf"
+          name="upload"
           className="bg-gray-100 border border-gray-200 p-2 mt-2 rounded-lg font-normal"
         />
       </label>
