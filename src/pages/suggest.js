@@ -5,6 +5,8 @@ import { navigate } from "gatsby-link"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import Cuteness from "../images/memeojis/cuteness_overload.png"
+
 function encode(data) {
   const formData = new FormData()
 
@@ -50,7 +52,15 @@ export default class submission extends Component {
         <Link to="/" className="mb-2" style={{ width: "fit-content" }}>
           <span className="mr-2">←</span>Back Home
         </Link>
-        <h1>Suggest a Memeoji</h1>
+        <h1>
+          <img
+            src={Cuteness}
+            alt="Cuteness"
+            width="40"
+            className="inline-block mb-1 mr-2"
+          />
+          Suggest a Memeoji
+        </h1>
         <p className="w-full lg:w-2/3">
           Got a must-have idea for a memeoji? Submit your idea and I'll try to
           design it one day.
