@@ -75,7 +75,7 @@ const IndexPage = () => {
           {data.allFile.edges.map((file, index) => {
             return (
               <a
-                key={`pdf-${index}`}
+                key={`zip-${index}`}
                 href={file.node.publicURL}
                 className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 xl:ml-0 xl:mt-2"
                 download
