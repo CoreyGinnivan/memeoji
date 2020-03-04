@@ -97,7 +97,7 @@ const IndexPage = () => {
         <Memeoji img={Cuteness} name="cuteness_overload" />
         <Memeoji img={Lenny} name="lenny" />
         <Memeoji img={Lol} name="lol" />
-        <Memeoji img={Jesus} name="jesus" />
+        <Memeoji img={Jesus} name="sweet_jesus" />
       </div>
     </Layout>
   )
