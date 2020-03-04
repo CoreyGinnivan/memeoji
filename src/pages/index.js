@@ -29,8 +29,7 @@ const Memeoji = ({ name, img }) => {
 function DownloadAll() {
   return (
     <a
-      id="downloadAll"
-      href="/"
+      href={"/images/memeojis.zip"}
       className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 xl:ml-0 xl:mt-2"
       download
     >
