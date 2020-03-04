@@ -32,7 +32,9 @@
   "license": "MIT",
   "scripts": {
     "zip": "node createZip.js",
+    "prebuild": "npm run zip",
     "build": "gatsby build",
+    "predevelop": "npm run zip",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
