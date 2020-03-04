@@ -57,7 +57,7 @@ const IndexPage = () => {
               className="font-semibold text-black hover:underline"
               rel="noopener noreferrer"
             >
-              this Google Chrome extention ⤴
+              this Google Chrome extension ⤴
             </a>
             .
           </p>
