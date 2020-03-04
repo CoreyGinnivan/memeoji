@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -26,22 +27,18 @@ const Memeoji = ({ name, img }) => {
   )
 }
 
-function DownloadAll() {
-  return (
-    <a
-      href={"/images/memeojis.zip"}
-      className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 xl:ml-0 xl:mt-2"
-      download
-    >
-      <span role="img" aria-label="down arrow" class="mr-2">
-        ⬇️
-      </span>
-      Download All Memeojis
-    </a>
-  )
-}
-
 const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allFile(filter: { extension: { eq: "zip" } }) {
+        edges {
+          node {
+            publicURL
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <SEO title="Home" />
@@ -75,7 +72,21 @@ const IndexPage = () => {
             </span>
             Suggest a Memeoji
           </Link>
-          <DownloadAll />
+          {data.allFile.edges.map((file, index) => {
+            return (
+              <a
+                key={`pdf-${index}`}
+                href={file.node.publicURL}
+                className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 xl:ml-0 xl:mt-2"
+                download
+              >
+                <span role="img" aria-label="down arrow" class="mr-2">
+                  ⬇️
+                </span>
+                Download All Memeojis
+              </a>
+            )
+          })}
         </div>
       </div>
       <div className="grid grid-flow-row gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
