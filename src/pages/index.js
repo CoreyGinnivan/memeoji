@@ -13,6 +13,8 @@ import Lenny from "../images/memeojis/lenny.png"
 import Lol from "../images/memeojis/lol.png"
 import Shifty from "../images/memeojis/shifty.png"
 import Squinting from "../images/memeojis/squinting.png"
+import ShiftyAnimated from "../images/memeojis/shifty_animated.gif"
+import ShiftyAnimated2 from "../images/memeojis/shifty_animated2.gif"
 
 const Memeoji = ({ name, img }) => {
   return (
@@ -98,6 +100,8 @@ const IndexPage = () => {
         <Memeoji img={Lenny} name="lenny" />
         <Memeoji img={Lol} name="lol" />
         <Memeoji img={Jesus} name="sweet_jesus" />
+        <Memeoji img={ShiftyAnimated} name="shifty_animated" />
+        <Memeoji img={ShiftyAnimated2} name="shifty_animated2" />
       </div>
     </Layout>
   )
