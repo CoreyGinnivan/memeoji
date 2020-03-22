@@ -14,9 +14,9 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col" style={{ height: "100vh" }}>
+    <div className="flex flex-col">
       <main className="flex flex-col p-4 md:p-12 flex-grow">{children}</main>
-      <footer className="fled flex-row items-center p-4 md:p-12">
+      <footer className="block p-4 md:p-12">
         © {new Date().getFullYear()} • Crafted with{" "}
         <img
           src={Disapproval}
