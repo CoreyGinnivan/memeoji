@@ -46,7 +46,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Memeojis - Because why not" />
-      <div className="flex flex-col xl:flex-row justify-between xl:items-center mb-10">
+      <div className="block xl:flex flex-col xl:flex-row justify-between xl:items-center mb-10">
         <div>
           <h1 className="text-3xl md:text-6xl text-black">Memeojis</h1>
           <p className="text-sm sm:text-base">
