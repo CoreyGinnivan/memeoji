@@ -71,7 +71,7 @@ const IndexPage = () => {
             to="/suggest/"
             className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white"
           >
-            <span role="img" aria-label="speaker" class="mr-2">
+            <span role="img" aria-label="speaker" class="hidden md:block mr-2">
               📢
             </span>
             Suggest a Memeoji
@@ -84,7 +84,11 @@ const IndexPage = () => {
                 className="flex text-xs sm:text-base border-gray-900 border-4 py-2 px-4 rounded-lg font-semibold hover:bg-gray-900 hover:text-white ml-2 mt-0 xl:ml-0 xl:mt-2"
                 download
               >
-                <span role="img" aria-label="down arrow" class="mr-2">
+                <span
+                  role="img"
+                  aria-label="down arrow"
+                  class="hidden md:block mr-2"
+                >
                   ⬇️
                 </span>
                 Download All Memeojis
