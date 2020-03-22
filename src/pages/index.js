@@ -16,6 +16,7 @@ import Squinting from "../images/memeojis/squinting.png"
 import ShiftyAnimated from "../images/memeojis/shifty_animated.gif"
 import ShiftyAnimated2 from "../images/memeojis/shifty_animated2.gif"
 import PonderingCorona from "../images/memeojis/pondering_corona.png"
+import SpookyCorona from "../images/memeojis/spooky_corona.png"
 
 const Memeoji = ({ name, img }) => {
   return (
@@ -104,6 +105,7 @@ const IndexPage = () => {
         <Memeoji img={ShiftyAnimated} name="shifty_animated" />
         <Memeoji img={ShiftyAnimated2} name="shifty_animated2" />
         <Memeoji img={PonderingCorona} name="pondering_corona" />
+        <Memeoji img={SpookyCorona} name="spooky_corona" />
       </div>
     </Layout>
   )
